@@ -1,0 +1,88 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* black cards i.e clubs and spades */
+.cardblack, .cardred {
+    width: 80px;
+    height: 110px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+    color: red;
+    background-color: white;
+    margin: 2px 2px;
+}
+
+/* red cards i.e hearts and diamonds */
+.cardred {
+    color: black;
+}
+
+.card-top, .card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-value, .card-shape {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-middle {
+    display: flex;
+    justify-content: center;
+}
+
+.card-midshape {
+    font-size: 45px;
+}
+
+
+/* game environment */
+
+.table {
+    width: 100vw;
+    height: 55vh;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    width: 100vw;
+    height: 45vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    overflow: auto;
+}
+
+.rack {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1rem 0;
+}
+
+.spacer {
+    width: 20vw;
+}
+
+.main, .market {
+    width: 30vw;
+    height: 20vh;
+    background-color: red;
+    border-radius: 2.5rem;
+    display: grid;
+    place-items: center;
+}
+
